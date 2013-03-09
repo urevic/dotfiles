@@ -1,4 +1,5 @@
 .vim/undodir/
+.netrwhist
 
 # Object files
 *.o
