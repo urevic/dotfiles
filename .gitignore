@@ -1,5 +1,9 @@
+.vim/undodir/
+
 # Object files
 *.o
+*.pyc
+*.pyo
 
 # Libraries
 *.lib

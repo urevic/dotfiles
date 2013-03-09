@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/var/www/vendre.ru/config/Spain'
+let g:netrw_dirhist_2='/var/www/vendre.ru/config'
+let g:netrw_dirhist_3='/var/www/vendre.ru/config/Brazil'
+let g:netrw_dirhist_4='/home/stas'
+let g:netrw_dirhist_5='/var/www/vendre.ru/models'
+let g:netrw_dirhist_6='/etc'
+let g:netrw_dirhist_7='/var/www/vendre.ru/cron'
+let g:netrw_dirhist_8='/usr/share/mc/skins'
