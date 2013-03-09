@@ -1,0 +1,9 @@
+.git
+*.pyc
+*.lnk
+*.swp
+*.swo
+.rsync_exclude
+.gitignore
+.vim/undodir
+README.md
