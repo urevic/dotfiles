@@ -233,7 +233,7 @@ let g:syntastic_python_checker_args='--ignore=E501'
 
 "au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
 "set completeopt=menuone,menu,longest,preview
-"set completeopt=longest,menuone
+set completeopt=menu,longest,preview
 
 " Change the behavior of the <Enter> key when the popup menu is visible.
 " In that case the Enter key will simply select the highlighted menu item, just as <C-Y> does.
