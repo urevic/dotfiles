@@ -1,3 +1,6 @@
 [submodule ".vim/vundle.git"]
 	path = .vim/vundle.git
 	url = https://github.com/gmarik/vundle.git
+[submodule ".oh-my-zsh/custom/auto-fu.zsh"]
+	path = .oh-my-zsh/custom/auto-fu.zsh
+	url = https://github.com/hchbaw/auto-fu.zsh.git
