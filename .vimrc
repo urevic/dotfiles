@@ -227,6 +227,7 @@ au BufNewFile,Bufread *.py let ropevim_vim_completion=1
 au BufNewFile,Bufread *.py let ropevim_vim_completion=1
 let g:syntastic_python_checker_args='--ignore=E501'
 let g:pymode_lint_ignore = "E501,E127,E128"
+autocmd FileType python set nosmartindent
 
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Omni complete
