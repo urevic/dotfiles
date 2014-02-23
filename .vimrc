@@ -57,9 +57,15 @@ set lazyredraw
 if has('persistent_undo')
     set undofile
     set undodir=~/.vim/undodir
-    set undolevels=1000 "maximum number of changes that can be undone
-    set undoreload=10000 "maximum number lines to save for undo on a buffer reload
+    set undolevels=1000   "maximum number of changes that can be undone
+    set undoreload=10000  "maximum number lines to save for undo on a buffer reload
 endif
+
+set backupdir=~/.vim/tmp/backup//
+set directory=~/.vim/tmp/swap//
+set backup
+set writebackup
+"set noswapfile
 
 set title
 set wildmenu
