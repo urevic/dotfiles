@@ -1,6 +1,9 @@
 #!/bin/sh
 
 git submodule update --init
+mkdir ./.vim/undodir
+mkdir -p ./.vim/tmp/backup
+mkdir -p ./.vim/tmp/swap
 rsync -avz --exclude-from=./.rsync_exclude ./ ~/
 rsync -avz --delete ./.vim/bundle/ ~/.vim/bundle/
 rsync -avz --delete ./.oh-my-zsh/custom/ ~/.oh-my-zsh/custom/
