@@ -16,21 +16,8 @@ else
     colorscheme solarized
 endif
 
-" Required for pathogen, will be turned on after #infect
-filetype off
-" git clone http://github.com/gmarik/vundle.git ~/.vim/vundle.git
-set rtp+=~/.vim/vundle.git/
-call vundle#rc()
 
-" Bundles:
-" Bundle "git://github.com/tpope/vim-surround.git"
-" Bundle "git://github.com/tpope/vim-repeat.git"
-" Bundle "git://github.com/tomtom/checksyntax_vim.git"
-call pathogen#infect()
-
-filetype plugin indent on
-
-set fileencodings=utf-8,cp1251,latin1
+set fileencodings=utf-8,cp1251,latin1,koi8-r,cp866
 set langmap=ёйцукенгшщзхъфывапролджэячсмитьбюЁЙЦУКЕHГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;`qwertyuiop[]asdfghjkl\\;'zxcvbnm\\,.~QWERTYUIOP{}ASDFGHJKL:\\"ZXCVBNM<>
 
 "Установка доп раскладки
@@ -224,8 +211,8 @@ au FileType php set omnifunc=phpcomplete#CompletePHP
 
 " Alt-/  or Alt-? (lucky mode)
 au BufNewFile,Bufread *.py let ropevim_vim_completion=1
-au BufNewFile,Bufread *.py let ropevim_vim_completion=1
 let g:syntastic_python_checker_args='--ignore=E501'
+let g:pymode_lint = 1
 let g:pymode_lint_ignore = "E501,E127,E128"
 autocmd FileType python set nosmartindent
 
@@ -292,4 +279,10 @@ let g:fuf_mrufile_exclude = '\v\~$|\.(bak|sw[po])$|^(\/\/|\\\\|\/mnt\/)'
 " Sudo write
 " comm! W exec 'w !sudo tee % > /dev/null' | e!
 
+" Required for pathogen, will be turned on after #infect
+filetype off
 
+call pathogen#infect()
+call pathogen#helptags()
+
+filetype plugin indent on
