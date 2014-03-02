@@ -1,9 +1,6 @@
 [submodule ".vim/vundle.git"]
 	path = .vim/vundle.git
 	url = https://github.com/gmarik/vundle.git
-[submodule ".vim/bundle/checksyntax_vim"]
-	path = .vim/bundle/checksyntax_vim
-	url = git://github.com/tomtom/checksyntax_vim.git
 [submodule ".vim/bundle/command-t"]
 	path = .vim/bundle/command-t
 	url = git://git.wincent.com/command-t.git
