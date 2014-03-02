@@ -4,7 +4,7 @@ set nocompatible
 
 if has('gui_running')
     "set guifont=Monospace\ 12
-    set guifont=Ubuntu\ Mono\ for\ Powerline\ 14
+    set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 14
     set background=dark
     colorscheme solarized
 else
@@ -29,6 +29,8 @@ set imsearch=0
 
 set laststatus=2
 let g:Powerline_symbols = 'fancy'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
 
 set noerrorbells
 set visualbell
@@ -280,7 +282,15 @@ let g:fuf_mrufile_maxItem = 1000
 let g:fuf_mrucmd_maxItem = 400
 let g:fuf_mrufile_exclude = '\v\~$|\.(bak|sw[po])$|^(\/\/|\\\\|\/mnt\/)'
 
-
+let g:tmuxline_preset = {
+    \'a': '#S',
+    \'b': '#F',
+    \'c': '',
+    \'win': ['#I', '#W'],
+    \'cwin': ['#I', '#W'],
+    \'x': '',
+    \'y': ['%b %d %R'],
+    \'z': ['#(cut -d " " -f 1-3 /proc/loadavg)', '#H']}
 
 " Sudo write
 " comm! W exec 'w !sudo tee % > /dev/null' | e!
