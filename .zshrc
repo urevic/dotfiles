@@ -12,7 +12,8 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="robbyrussell"
 #ZSH_THEME="blinks"
-ZSH_THEME="agnoster"
+#ZSH_THEME="agnoster"
+ZSH_THEME="dst"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -32,11 +33,16 @@ ZSH_THEME="agnoster"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
 COMPLETION_WAITING_DOTS="true"
+#ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
+export HISTSIZE=32768;
+export HISTFILESIZE=$HISTSIZE;
+export HISTCONTROL=ignoredups;
+export HISTIGNORE="ls:ll:cd:cd -:pwd:exit:date:* --help";
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git command-not-found history-substring-search debian dirpersist extract zsh-syntax-highlighting virtualenvwrapper tmux colored-man common-aliases python pip)
+plugins=(git command-not-found history-substring-search debian dirpersist extract zsh-syntax-highlighting virtualenvwrapper tmux colored-man common-aliases python pip z bgnotify)
 
 source $ZSH/oh-my-zsh.sh
 
