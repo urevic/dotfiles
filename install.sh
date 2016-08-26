@@ -1,6 +1,6 @@
 #!/bin/sh
 
-git submodule update --init
+git submodule update --init --recursive
 mkdir ./.vim/undodir
 mkdir -p ./.vim/tmp/backup
 mkdir -p ./.vim/tmp/swap
