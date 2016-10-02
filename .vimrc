@@ -157,6 +157,9 @@ function End()
     endif
 endfunction
 
+" Tag jumping with menu if multiple tags matches by default
+nmap <C-]> g<C-]>
+
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Syntax highlighting
 """"""""""""""""""""""""""""""""""""""""""""""""
