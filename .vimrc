@@ -160,6 +160,9 @@ endfunction
 " Tag jumping with menu if multiple tags matches by default
 nmap <C-]> g<C-]>
 
+" Saving of read-only files
+cmap w!! w !sudo tee % >/dev/null
+
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Syntax highlighting
 """"""""""""""""""""""""""""""""""""""""""""""""
