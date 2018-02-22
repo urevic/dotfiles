@@ -163,6 +163,9 @@ nmap <C-]> g<C-]>
 " Saving of read-only files
 cmap w!! w !sudo tee % >/dev/null
 
+" Use ripgrep instead of vimgrep (use copen to navigate matches)
+set grepprg=rg\ --vimgrep\ $*
+
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Syntax highlighting
 """"""""""""""""""""""""""""""""""""""""""""""""
