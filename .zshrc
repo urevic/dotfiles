@@ -42,7 +42,7 @@ export HISTIGNORE="ls:ll:cd:cd -:pwd:exit:date:* --help";
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git command-not-found history-substring-search debian dirpersist extract zsh-syntax-highlighting virtualenvwrapper tmux colored-man common-aliases python pip z bgnotify)
+plugins=(git command-not-found history-substring-search debian dirpersist extract zsh-syntax-highlighting virtualenvwrapper tmux colored-man-pages common-aliases python pip z bgnotify)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -50,3 +50,4 @@ source $ZSH/oh-my-zsh.sh
 setopt hist_ignore_space
 eval `dircolors ~/.dir_colors`
 DEBIAN_PREVENT_KEYBOARD_CHANGES=yes
+ZSH_TMUX_AUTOCONNECT=true

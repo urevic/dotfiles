@@ -16,6 +16,14 @@ else
     colorscheme solarized
 endif
 
+if has('nvim')
+    call plug#begin('~/.local/share/nvim/plugged')
+    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+    Plug 'tbodt/deoplete-tabnine', { 'do': './install.sh' }
+    Plug 'Shougo/echodoc.vim'
+    call plug#end()
+    let g:deoplete#enable_at_startup = 1
+endif
 
 set fileencodings=utf-8,cp1251,latin1,koi8-r,cp866
 set langmap=ёйцукенгшщзхъфывапролджэячсмитьбюЁЙЦУКЕHГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;`qwertyuiop[]asdfghjkl\\;'zxcvbnm\\,.~QWERTYUIOP{}ASDFGHJKL:\\"ZXCVBNM<>
