@@ -23,7 +23,11 @@ if has('nvim')
     Plug 'Shougo/echodoc.vim'
     call plug#end()
     let g:deoplete#enable_at_startup = 1
+    set cmdheight=2
+    let g:echodoc#enable_at_startup = 1
+    let g:echodoc#type = 'float'
 endif
+
 
 set fileencodings=utf-8,cp1251,latin1,koi8-r,cp866
 set langmap=ёйцукенгшщзхъфывапролджэячсмитьбюЁЙЦУКЕHГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;`qwertyuiop[]asdfghjkl\\;'zxcvbnm\\,.~QWERTYUIOP{}ASDFGHJKL:\\"ZXCVBNM<>
