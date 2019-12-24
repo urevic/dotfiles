@@ -58,3 +58,6 @@
 [submodule ".vim/bundle/vim-ripgrep"]
 	path = .vim/bundle/vim-ripgrep
 	url = https://github.com/jremmen/vim-ripgrep.git
+[submodule ".vim/bundle/undotree"]
+	path = .vim/bundle/undotree
+	url = https://github.com/mbbill/undotree.git
