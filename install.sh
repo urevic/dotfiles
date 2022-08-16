@@ -2,6 +2,9 @@
 
 git submodule update --init --recursive
 git submodule update --recursive --remote
+echo "[!] python-mode should be installed separately as it uses submodules itself"
+cd ./.vim/bundle/
+git clone --recurse-submodules https://github.com/python-mode/python-mode.git
 mkdir ./.vim/undodir
 mkdir -p ./.vim/tmp/backup
 mkdir -p ./.vim/tmp/swap
@@ -13,3 +16,4 @@ sudo apt-get install build-essential ruby ruby-dev
 cd ~/.vim/bundle/command-t/ruby/command-t/ext/command-t/
 make clean; ruby extconf.rb && make
 cd -
+rm -rf ./.vim/bundle/python-mode/
