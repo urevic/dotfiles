@@ -5,7 +5,7 @@ set nocompatible
 if has('gui_running')
     "set guifont=Monospace\ 12
     set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 14
-    set background=dark
+    set background=light
     colorscheme solarized
 else
     set t_Co=256
