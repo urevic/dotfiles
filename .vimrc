@@ -9,7 +9,7 @@ if has('gui_running')
     colorscheme solarized
 else
     set t_Co=256
-    set background=dark
+    set background=light
     "colorscheme calmar256-dark
     "let g:solarized_termcolors=256
     "let g:solarized_termtrans=1
@@ -17,15 +17,15 @@ else
 endif
 
 if has('nvim')
+    set termguicolors
     call plug#begin('~/.local/share/nvim/plugged')
-    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-    Plug 'tbodt/deoplete-tabnine', { 'do': './install.sh' }
+    Plug 'overcache/NeoSolarized'
     Plug 'Shougo/echodoc.vim'
     call plug#end()
-    let g:deoplete#enable_at_startup = 1
     set cmdheight=2
     let g:echodoc#enable_at_startup = 1
     let g:echodoc#type = 'float'
+    colorscheme NeoSolarized
 endif
 
 
@@ -319,6 +319,8 @@ let g:tmuxline_preset = {
 
 " Required for pathogen, will be turned on after #infect
 filetype off
+
+let g:CommandTPreferredImplementation='ruby'
 
 call pathogen#infect()
 call pathogen#helptags()
